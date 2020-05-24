@@ -1,0 +1,13 @@
+{
+  "name": "age-of-empires-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Marco Argentieri",
+  "license": "MIT",
+  "dependencies": {
+    "telebot": "^1.3.0"
+  },
+  "scripts": {
+    "build": "docker build -t tiero/age-of-empires-bot ."
+  }
+}
