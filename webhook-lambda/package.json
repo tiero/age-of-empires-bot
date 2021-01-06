@@ -5,7 +5,7 @@
   "author": "Marco Argentieri",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   },
   "scripts": {
     "zip": "zip -r telegram-bot.zip index.js package.json node_modules",
