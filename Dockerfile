@@ -1,7 +1,5 @@
-FROM node:12
+FROM node:16
 
-ARG TELEGRAM_BOT_TOKEN_ARG
-ENV TELEGRAM_BOT_TOKEN $TELEGRAM_BOT_TOKEN_ARG
 # Create app directory
 WORKDIR /app
 
@@ -10,6 +8,6 @@ COPY package.json ./
 RUN npm install
 
 # Bundle app source
-COPY . .
+COPY index.js .
 
 CMD [ "node", "index.js" ]
